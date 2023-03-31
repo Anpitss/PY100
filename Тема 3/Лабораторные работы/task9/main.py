@@ -4,7 +4,9 @@ months = 10  # количество месяцев
 increase = 0.03  # рост цен
 
 need_money = 0  # количество денег, чтобы прожить 10 месяцев
-
+value = 0
 # TODO Оформить решение
-
-print(round(need_money))
+for i in range(1, 11):
+    need_money += spend
+    spend += spend * increase
+print(int(need_money-(salary * 10)))
